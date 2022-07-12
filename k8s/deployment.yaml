@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deyunhos
+  name: honbom
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: deyunhos
+      app: honbom
   template:
     metadata:
       labels:
-        app: deyunhos
+        app: honbom
     spec:
       containers:
-      - image: okteto.dev/deyunhos:latest
-        name: deyunhos
+      - image: okteto.dev/honbom:latest
+        name: honbom
         ports:
         - containerPort: 8080
         env:
